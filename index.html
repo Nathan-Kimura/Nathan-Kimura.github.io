@@ -1,125 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Portifólio</title>
-    <style>
-        body{
-            background-color:#ada7c9;
-        }
-
-        h1{
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 40px;
-            text-decoration: underline;
-            color:purple;
-        }
-
-        h2{
-            text-align: center;
-        }
-
-        h3{
-            text-align: center;
-        }
-
-        #indice{
-            text-align: center;
-            line-height: 25px;
-            background-color:#90a8c3;
-            font-style: oblique;
-        }
-
-        .nome{
-            font-family: fantasy;
-            font-size: large;
-            font-weight: 200;
-            text-align: center;
-        }
-
-        .titulo{
-            text-align: center;
-            font-size: 20px;
-        }
-
-        .descricao{
-            font-family: fantasy;
-            font-size: large;
-            text-align: center;
-            color: #373f47;
-            line-height: 25px;
-        }
-
-        div{
-            text-align: center;
-        }
-
-        img{
-            border-radius: 50%;
-        }
-
-        #habilidades{
-            line-height: 25px;
-            text-align: center;
-            background-color: #90a8c3;
-            color:#5c0268;
-            margin-left: -60px;
-        }
-        #indicação-de-site{
-            width: 200px;
-            border-radius: 14px;
-            border-left: purple;
-            padding: 10px;
-            background-color: burlywood;
-            text-align: center;
-            font-size: 20px
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Meu portifólio web</h1>
-    <h2>Nome do autor</h2>
-    <p class="nome"><a id="Nome-do-autor">Nathan Kimura Maciel.</a></p>
-    <h3>Índice</h3>
-    <ul>
-        <li id="indice"><a href="#Nome-do-autor">Nome do autor</a></li>
-        <li id="indice"><a href="#descrição">Breve descrição</a></li>
-        <li id="indice"><a href="#habilidades">Habilidades</a></li>
-        <li id="indice"><a href="#indicação-de-site">Indicação de site</a></li>
-    <ul>
-            <br><br>
-        <div>
-            <img src="me.jpg" alt="Foto do autor da página atualizada" width="300">
-        </div>
+    <div>
+        <h1>Meu portifólio web</h1>
+        <h2>Nome do autor</h2>
+        <p id="nome"><a>Nathan Kimura Maciel.</a></p>
+        <div id="description-container">
+            <img src="me.jpg" alt="Foto do autor da página atualizada" width="300" id="minha-foto">
+
             <br>
+            <p id="titulo-descrição"><strong>Descrição</strong></p>
 
-            <p class="titulo"><strong>Descrição</strong></p>
+            <p id="descrição"> Sou Nathan Kimura Maciel, atualmente tenho 24 anos, gosto muito de jogos em geral,
+                principalmente do famigerado League of legends, Gosto muito também de assistir animes, séries e mais
+                recentemente estou gostando muito de aprender a codar. Sou natural de Cascavel-PR. Moro atualmente em
+                jaraguá do sul-Sc, uma ótima e segura cidade para se viver.
+                <br>
+        </div>
+    </div>
 
-            <p class="descricao" id="descrição"> Sou Nathan Kimura Maciel, atualmente tenho 24 anos,<br> gosto muito de jogos em geral,
-            principalmente do famigerado <br> League of legends,
-            Gosto muito também de assistir animes, <br> séries e mais recentemente estou gostando muito de aprender
-            <br> a codar. Sou natural de Cascavel-PR.
-            Moro atualmente em <br> jaraguá do sul-Sc, uma ótima e segura cidade para se viver.
-<br>
-            <p class="titulo"><strong>Habilidades</strong></p>
+    <div>
+        <p class="titulo"><strong>Índice</strong></p>
+        <ul id="lista-indice">
+            <li><a href="#nome">Nome do autor</a></li>
+            <li><a href="#descrição">Breve descrição</a></li>
+            <li><a href="#lista-habilidades">Habilidades</a></li>
+            <li><a href="#indicação-de-site">Indicação de site</a></li>
+        <ul>
+    </div>
+    <div>           
+        <p class="titulo"><strong>Habilidades</strong></p>
 
-            <ul id="habilidades">
+        <ul id="lista-habilidades">
             <li>Facilidade em entender</li>
             <li>Esforçado</li>
             <li>Trabalho bem em grupo</li>
             <li>Inglês (A que mais me ajuda)</li>
             <li>Aprendendo HTML</li>
             <li><em>SolidWorks</em></li>
-            </ul>
-<br><br>
-            <div>
-            <img src="https://scontent.fjoi5-1.fna.fbcdn.net/v/t1.18169-9/11745889_499819856851537_8732185490378256871_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFqwObqHDEbR9nziiVzIpYXabkgancX9sVpuSBqdxf2xVNpF7LLhH6zisWbIPo5FEn_lVBeYlxe8-Naqm9JSRxh&_nc_ohc=kHvEQ4H0EHQAX8te3zr&_nc_ht=scontent.fjoi5-1.fna&oh=00_AT_lS_KQi1SGgVsOiW8ISpuR_NLZ48AleB6Q4uirzqcmfg&oe=62188BD1" alt="Foto do autor da página imagem mais antiga" width="300">
-            </div>
-            <p id="indicação-de-site"><em><a href= "https://jovemnerd.com.br/" target="_blank">Indicação de site</a></em></p>
-            
-        </body>
-        
-        </html>
+        </ul>
+    </div>
+
+     <br><br>
+
+    <div>
+        <img src="https://cdn.leroymerlin.com.br/products/quadro_the_end_49x49cm_89333706_5e2f_600x600.jpg"
+            alt="Foto escrito the end" width="300">
+    </div>
+
+    <p id="indicação-de-site"><em><a href="https://jovemnerd.com.br/" target="_blank">Indicação de site</a></em></p>
+
+</body>
+
+</html>
